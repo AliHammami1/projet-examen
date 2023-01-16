@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile - Acceuil</title>
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../js/quiz.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar Start -->
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">
+                <h1 class="m-0"><span class="text-primary">Port</span>folio</h1>
+            </a>
+            <div class="barmenu">
+                <a href="../index.html" >Accueil</a>
+                <div class="menu">
+                    <button class="dropbtn">Parcours</button>
+                    <div class="liste-menu">
+                        <a href="diplome.html" >Diplômes</a>
+                        <a href="experience.html" >Expériences</a>
+                        <a href="projet.html" >Projets</a>
+                        <a href="manifestation.html" >Manifestations</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="dropbtn">Qualitées</button>
+                    <div class="liste-menu">
+                        <a href="competence.html" >Compétences</a>
+                        <a href="passion.html" >Passion & Atouts</a>
+                        
+                    </div>
+                </div>
+                <a href="quiz.html" class="active">Quiz</a>
+                <a href="iit.html">IIT</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+ 
+    <main>
+        <section>
+            <div class="titresec">
+                <h1 class="arrsec">Quiz
+                </h1>
+                <h1 class="avansec">Faire le test</h1>
+            </div>
+            <div class="restest">
+                <p id="resulttest"></p>
+            </div>
+            <div class="quiz">
+                <form action="">
+                   <div class="quiz-item">
+                        <button class="quiz-ques" type="button">
+                            1.  Quelle est la sortie de l'instruction list(range(1,5,2)) ?
+                        </button>
+                            <div class="quiz-body">
+                                <input type="radio" name="test1" id="test1rep1" value="1"><label
+                                    for="test1rep1" id="lab1rep1">[1,2,3,4]</label><br>
+                                <input type="radio" name="test1" id="test1rep2" value="2"><label
+                                    for="test1rep2" id="lab1rep2">[1,3]</label><br>
+                                <input type="radio" name="test1" id="test1rep3" value="3"><label
+                                    for="test1rep3" id="lab1rep3">1,2,3,4</label>
+                            </div>
+                    </div>
+
+                    <div class="quiz-item">
+                        <button class="quiz-ques" type="button">
+                            2.  En Python, les boucles « for » et « while » peuvent avoir une instruction « else » optionnelle ?
+                        </button>
+                            <div class="quiz-body">
+                                <input type="radio" name="test2" id="test2rep1" value="1"><label
+                                    for="test2rep1" id="lab2rep1">Vrai</label><br>
+                                <input type="radio" name="test2" id="test2rep2" value="2"><label
+                                    for="test2rep2" id="lab2rep2">Faux</label>
+                            </div>
+                    </div>
+
+                    <div class="quiz-item">
+                        <button class="quiz-ques" type="button">
+                            3.  Quelle est la sortie de l'instruction print([i.lower() for i in "HELLO"]) ?
+                        </button>
+                            <div class="quiz-body">
+                                <input type="radio" name="test3" id="test3rep1" value="1"><label
+                                    for="test3rep1" id="lab3rep1">['hello']</label><br>
+                                <input type="radio" name="test3" id="test3rep2" value="2"><label
+                                    for="test3rep2" id="lab3rep2">['h', 'e', 'l', 'l', 'o']</label><br>
+                                <input type="radio" name="test3" id="test3rep3" value="3"><label
+                                    for="test3rep3" id="lab3rep3">hello</label>
+                            </div>
+                    </div>
+
+                    <div class="quiz-item">
+                        <button class="quiz-ques" type="button">
+                            4.  Quelle sera la sortie de chr(ord('A')) ?
+                        </button>
+                            <div class="quiz-body">
+                                <input type="radio" name="test4" id="test4rep1" value="1"><label
+                                    for="test4rep1" id="lab4rep1">65</label><br>
+                                <input type="radio" name="test4" id="test4rep2" value="2"><label
+                                    for="test4rep2" id="lab4rep2">'a'</label><br>
+                                <input type="radio" name="test4" id="test4rep3" value="3"><label
+                                    for="test4rep3" id="lab4rep3">'A'</label>
+                            </div>
+                    </div>
+
+                    <div class="quiz-item">
+                        <button class="quiz-ques" type="button">
+                            5.  Étant donnée l1=[1, 28, 35], l’exécution de l’instruction print(l1[ ::-1]) affiche
+                        </button>
+                            <div class="quiz-body">
+                                <input type="radio" name="test5" id="test5rep1" value="1"><label
+                                    for="test5rep1" id="lab5rep1">[1, 28, 35]</label><br>
+                                <input type="radio" name="test5" id="test5rep2" value="2"><label
+                                    for="test5rep2" id="lab5rep2">Erreur</label><br>
+                                <input type="radio" name="test5" id="test5rep3" value="3"><label
+                                    for="test5rep3" id="lab5rep3">[35, 28, 1]</label>
+                            </div>
+                    </div>
+                    <button class="btn btn-outline-secondary btnquiz" type="button" id="btnquizannul" onclick="document.location.reload();">Annuler</button>
+                    <button class="btn btn-outline-primary " type="button" id="btnquizconf" onclick="confirm();">Confirmer</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Start -->
+    <footer>
+        <p>&copy; <a href="index.html">Portfolio</a>. Tous les droits sont réservés. Conçu par <a href="index.html">Ali Hammami</a>
+        </p>
+    </footer>
+    <!-- Footer End -->
+    
+</body>
+
+</html>

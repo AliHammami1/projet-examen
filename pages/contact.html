@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile - Acceuil</title>
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <script type="text/javascript" src="../js/contact.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- Navbar Start -->
+        <nav class="navbar">
+            <a href="../index.html" class="navbar-brand">
+                <h1 class="m-0"><span class="text-primary">Port</span>folio</h1>
+            </a>
+            <div class="barmenu">
+                <a href="../index.html" >Accueil</a>
+                <div class="menu">
+                    <button class="dropbtn">Parcours</button>
+                    <div class="liste-menu">
+                        <a href="diplome.html" >Diplômes</a>
+                        <a href="experience.html" >Expériences</a>
+                        <a href="projet.html" >Projets</a>
+                        <a href="manifestation.html" >Manifestations</a>
+                    </div>
+                </div>
+                <div class="menu">
+                    <button class="dropbtn">Qualitées</button>
+                    <div class="liste-menu">
+                        <a href="competence.html" >Compétences</a>
+                        <a href="passion.html" >Passion & Atouts</a>
+                        
+                    </div>
+                </div>
+                <a href="quiz.html" >Quiz</a>
+                <a href="iit.html" >IIT</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </nav>
+        <!-- Navbar End -->
+    </header>
+ 
+    <main>
+        <section>
+            <!-- Contact Start -->
+                    <div class="titresec">
+                        <h1 class="arrsec">Contact
+                        </h1>
+                        <h1 class="avansec">Contactez moi</h1>
+                    </div>
+                    <form >
+                        <table class="tabmain">
+                            <tr >
+                                <td><input type="text" class="form-control" id="nom" placeholder="Votre Nom"></td>
+                                <td><input type="email" class="form-control" id="email" placeholder="Votre Email"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><input type="text" class="form-control" id="sujet" placeholder="Sujet" style="width: 637px;"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><textarea class="form-control"  rows="5" id="message" placeholder="Message" style="width: 637px;"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2"><button class="btn btn-outline-primary btncont" type="button" id="btncontact" onclick="send();">Envoyer</button></td>
+                            </tr>
+                        </table>
+                    </form>
+            <!-- Contact End -->
+        </section>
+    </main>
+    
+    <!-- Footer Start -->
+    <footer>
+        <p>&copy; <a href="index.html">Portfolio</a>. Tous les droits sont réservés. Conçu par <a href="index.html">Ali Hammami</a>
+        </p>
+    </footer>
+    <!-- Footer End -->
+    
+</body>
+
+</html>
